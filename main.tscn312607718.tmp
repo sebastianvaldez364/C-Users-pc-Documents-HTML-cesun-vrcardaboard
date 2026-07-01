@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1rhbhnktdgd7"]
+
+[ext_resource type="Script" uid="uid://cgcqpg7jh71u7" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://s5ugrpk4rfw4" path="res://addons/cardboard_vr/scripts/cardboard_vr_camera.gd" id="2_0xm2m"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+
+[node name="CardboardVRCamera3D" type="Camera3D" parent="Player"]
+script = ExtResource("2_0xm2m")
+metadata/_custom_type_script = "uid://s5ugrpk4rfw4"
