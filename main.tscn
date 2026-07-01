@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c1rhbhnktdgd7"]
+[gd_scene load_steps=8 format=3 uid="uid://c1rhbhnktdgd7"]
 
 [ext_resource type="Script" uid="uid://cgcqpg7jh71u7" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://s5ugrpk4rfw4" path="res://addons/cardboard_vr/scripts/cardboard_vr_camera.gd" id="2_0xm2m"]
@@ -7,7 +7,14 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h2yge"]
 
+[sub_resource type="Sky" id="Sky_1bvp3"]
+
 [sub_resource type="Environment" id="Environment_1bvp3"]
+background_mode = 1
+background_color = Color(2.1658838e-07, 0.20317891, 0.3301253, 1)
+sky = SubResource("Sky_1bvp3")
+ambient_light_source = 3
+ambient_light_color = Color(0, 0, 0.6509804, 1)
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_ig7tw")
